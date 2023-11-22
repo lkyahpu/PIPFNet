@@ -1,5 +1,5 @@
 # PIPFNet
-Polarized Prior Guided Fusion Network for Infrared Polarization Image
+Polarized Prior Guided Fusion Network for Infrared Polarization Images
 
 ## Installation
 [Python 3.8]
@@ -15,22 +15,27 @@ We use the [ LWIR DoFP Dataset of Road Scene (LDDRS)](https://github.com/polwork
 Download LDDRS dataset from https: //github.com/polwork/LDDRS.
 You can randomly assign infrared intensity and polarized images for training and testing in the following directories
 ```
-|-- dataset
+|-- dataset_all
   |-- train
-    |-- 0000
-       |-- S0.png
-       |-- rho.png
-       |-- pd.png
-    |-- 0001
-    |-- ....
+    |-- S0
+       |-- 0000.png
+       |-- ....
+    |-- dolp
+    |-- label
+    |-- aop
+    |-- s1_s0
   |-- val
-    |-- 0000
-    |-- 0001
-    |-- ....
+    |-- S0
+       |-- 0000.png
+       |-- ....
+    |-- dolp
+    |-- label
   |-- test
-    |-- 0000
-    |-- 0001
-    |-- ....
+    |-- S0
+       |-- 0000.png
+       |-- ....
+    |-- dolp
+    |-- label
 ```    
 
 ## Train & Test
